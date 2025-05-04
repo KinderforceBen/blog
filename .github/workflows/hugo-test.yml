@@ -44,7 +44,6 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-            -t risotto
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
