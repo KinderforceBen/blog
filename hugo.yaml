@@ -42,7 +42,7 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
+    favicon: "/favicon.ico"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
     apple_touch_icon: "<link / abs url>"
@@ -70,8 +70,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there ☁️"
-    Content: Welcome to my blog
+    Title: "Welcome to my blog ☁️"
+    Content: "I'm Ben Kinder, a Salesforce Architect with 14 Salesforce certifications and a strong foundation in Salesforce administration, architecture concepts, and platform management. Brings nearly a decade of enterprise IT and cybersecurity experience, including leading secure system implementations and aligning infrastructure with organizational goals. Known for quickly learning new technologies and frameworks, with a constant drive to grow and deepen Salesforce expertise. Strong communicator with a proven ability to bridge technical strategy and business needs across diverse stakeholders."
 
   socialIcons:
     - name: linkedin
