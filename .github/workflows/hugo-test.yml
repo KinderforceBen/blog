@@ -32,6 +32,12 @@ jobs:
       - name: Run hugo
         run: hugo -t risotto
 
+      - name: Upload public folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: public
+          path: ./public
+          overwrite: true
 
   deploy:
     runs-on: ubuntu-latest
