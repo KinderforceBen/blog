@@ -53,6 +53,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: public
+          path: ./public
+
       - name: Deploy public folder to GitHub pages
         id: deployment
         uses: actions/deploy-pages@v4
