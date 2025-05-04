@@ -26,8 +26,16 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y hugo
 
+      - name: Setup theme
+        run: git submodule update --init --recursive
+
       - name: Run hugo
         run: hugo -t risotto
+
+      - name: Upload public folder
+        uses: actions/upload-artifact@v3
+        with:
+          path: ./public
 
   deploy:
     runs-on: ubuntu-latest
