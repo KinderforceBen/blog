@@ -50,8 +50,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Setup GitHup Pages
+        uses: actions/configure-pages@v5
 
       - name: Download artifact
         uses: actions/download-artifact@v4
