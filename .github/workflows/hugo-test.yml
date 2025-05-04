@@ -47,7 +47,7 @@ jobs:
             -t risotto
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
