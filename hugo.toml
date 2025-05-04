@@ -4,7 +4,6 @@ title = 'Ben Kinder'
 theme = 'risotto'
 author = "Ben Kinder"
 copyright = "© Ben Kinder"
-paginate = 3
 
 # Automatically add content sections to main menu
 sectionPagesMenu = "main"
