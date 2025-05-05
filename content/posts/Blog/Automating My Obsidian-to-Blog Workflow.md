@@ -1,8 +1,11 @@
 ---
-tags: []
+tags:
+  - github
+  - cicd
+  - github_actions
 title: Automating My Obsidian-to-Blog Workflow
 date: 2025-05-04T21:43:31.492Z
-lastmod: 2025-05-04T22:46:10.671Z
+lastmod: 2025-05-05T13:33:40.955Z
 ---
 ## Overview
 
@@ -95,17 +98,17 @@ You'll also notice that I'm deploying to GitHub pages rather than Hostinger. Git
 
 Now whenever I push updated content to my GitHub repo, the workflow I created automatically runs and deploys the latest content to pages:
 
-![Pasted image 20250504180948.png](/ob/Pasted%20image%2020250504180948.png)
+![Pasted image 20250504180948.png](/ob/attachments/Pasted%20image%2020250504180948.png)
 
 ### 2. Tighter Integration with Obsidian
 
 The other missing piece for me was the ability to publish directly from within Obsidian and to solve that I found the [Hugo Publish](https://github.com/kirito41dd/obsidian-hugo-publish) plug-in for Obsidian. You can install this plug-in from Obsidian’s Community Plug-Ins section in the settings.
 
-![Pasted image 20250504180737.png](/ob/Pasted%20image%2020250504180737.png)
+![Pasted image 20250504180737.png](/ob/attachments/Pasted%20image%2020250504180737.png)
 
 Once the plug-in is installed, there are a few settings you need to configure including the local folder to publish to as well as the content/posts folder that you want to use within the folder structure. You can also configure the plug-in to only post notes with a certain tag so that your private notes don't get published to your blog.
 
-![Pasted image 20250504181112.png](/ob/Pasted%20image%2020250504181112.png)
+![Pasted image 20250504181112.png](/ob/attachments/Pasted%20image%2020250504181112.png)
 
 This plugin also handles all of the image copying and image reference conversions to get images working in your blog posts just like they do in Obsidian.
 
