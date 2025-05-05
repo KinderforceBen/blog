@@ -5,7 +5,7 @@ tags:
   - flows
 title: Tips for Using Agentforce with Flows
 date: 2025-05-05T15:31:11.410Z
-lastmod: 2025-05-05T18:36:26.843Z
+lastmod: 2025-05-05T18:38:37.383Z
 ---
 When Agentforce was released, the obvious use cases were internal AI chat for employees using Salesforce and customer-facing chat support integrated with Omni-Channel, but Salesforce announced support for calling Agentforce from flows as well. At first the flows use case made less sense to me (especially with the price for each Agentforce conversation at around \$2), but since then I've seen use cases where calling an agent from a flow has made sense and I have a few key takeaways and tips.
 
@@ -25,7 +25,7 @@ Recently, the business has been growing rapidly and leadership at The Best Bean 
 
 Since the company doesn't want to add chat or Omni-Channel this is a perfect use case for calling an agent from flows instead! They setup a record-triggered flow that calls an Agentforce agent and passes it the case that triggered the flow. Then the agent classifies the case and attempts to resolve it.
 
-We'll go through some steps below to create a sample flow and agentt for The Best Bean using a Salesforce Developer Edition org. You can read through the steps, create your own Developer Edition org [here](https://www.salesforce.com/form/developer-signup/?d=pb), or skip to the [key takeaways](#key-takeaways-and-tips") if that's what you came here for.
+We'll go through some steps below to create a sample flow and agentt for The Best Bean using a Salesforce Developer Edition org. You can read through the steps, create your own Developer Edition org [here](https://www.salesforce.com/form/developer-signup/?d=pb), or skip to the [key takeaways](#key-takeaways-and-tips) if that's what you came here for.
 
 ## Agentforce and Flow Setup
 
