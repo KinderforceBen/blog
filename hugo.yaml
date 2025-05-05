@@ -136,3 +136,7 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+services:
+  googleAnalytics:
+    id: G-M5E25DS1XF
