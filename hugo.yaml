@@ -43,30 +43,14 @@ params:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
     favicon: "/favicon.ico"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon16x16: "/favicon_16x16.ico"
+    favicon32x32: "/favicon_32x32.ico"
+    apple_touch_icon: "/apple_touch_icon.png"
 
   label:
     text: "Home"
     icon: /apple-touch-icon.png
     iconHeight: 35
-
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
 
   # home-info mode
   homeInfoParams:
@@ -82,14 +66,6 @@ params:
       url: "https://infosec.exchange/@benkinder"
     - name: Trailhead
       url: "https://www.salesforce.com/trailblazer/profile"
-
-  analytics:
-    google:
-      SiteVerificationTag: "G-M5E25DS1XF"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
 
   cover:
     hidden: true # hide everywhere but not in structured data
