@@ -7,7 +7,7 @@ tags:
   - siem
 title: Setting Up Splunk for your Homelab (Part 1 - Splunk Installation)
 date: 2025-05-07T18:55:46.169Z
-lastmod: 2025-05-07T20:39:35.350Z
+lastmod: 2025-05-07T20:43:43.097Z
 ---
 In this post I'll walk through the steps to download a free copy of Splunk, apply for a 10GB/day developer license, and set up your own Splunk server for your homelab. Splunk is a great tool to learn because it's widely used especially in large companies and because it's fun to dig in to. In the future, I'll post about getting data into Splunk from a variety of sources including Unifi network equipment, Corelight/Zeek, Salesforce, Microsoft, and more!
 
@@ -43,7 +43,7 @@ I already use TrueNAS to host data for other projects, so we'll be creating a VM
    3. Attach NIC: bond10 (this is a bond that I created to combine multiple NICs, you'll likely just have one NIC option and it will be different from this)
 6. On the **Installation Media** page we'll need to upload an ISO to install our operating system (OS) from. We'll be using the latest long-term support release of Ubuntu Server which as of this writing is 24.04.2 LTS and can be downloaded [here](https://ubuntu.com/download/server)
 7. Click **Upload New Image File** and select an appropriate location to save the file on your NAS. Then click **Choose File**, select the file we downloaded, and click **Upload**
-   1. If you got an error message that the file is too large, skip this step from now and refer to the [ISO Too Large](#iso-to-large) section of this post for workarounds.
+   1. If you got an error message that the file is too large, skip this step from now and refer to the [ISO Too Large](#iso-too-large) section of this post for workarounds.
 8. Leave the settings in the **GPU** section at their defaults and click **Next**
 9. Review the **Confirm Options** section and click **Save**
 10. If everything went well you should now see your new VM in the Virtual Machines list\
@@ -78,7 +78,7 @@ If you're still here that means that the ISO file was too large for you to uploa
       4. ![Pasted image 20250507155807.png](/ob/attachments/Pasted%20image%2020250507155807.png)
    3. Try steps 5 and 6 again to add the ISO to your VM
 
-## Installing Ubuntu
+## Step 2: Installing Ubuntu
 
 Since we'll be using Ubuntu Server to host Splunk we'll need to install Ubuntu on our VM. If you're using TrueNAS go to the **Virtualization** section, click the arrow to the right of your VM, click **Start**, and then click **Display**. If you're installing Ubuntu somewhere else you can jump right into the steps below!
 
@@ -126,7 +126,7 @@ Since we'll be using Ubuntu Server to host Splunk we'll need to install Ubuntu o
     ```
 19. Great! With those updates installed we're ready to move on to installing Splunk
 
-## Installing Splunk
+## Step 3: Installing Splunk
 
 1. First, we'll need to get a copy of the Splunk Enterprise installer. Luckily, Splunk offers a free download of the installer to anyone who creates an account [here](https://www.splunk.com/en_us/download/splunk-enterprise.html)
 2. Once you've made it to the download page, select **Linux** and then click **Copy wget link** on the **.deb** line (.deb is like the Ubuntu equivalent of .exe on Windows)\
