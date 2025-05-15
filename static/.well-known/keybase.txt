@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/benkinder
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://frothly.org
+  * I am benkinder (https://keybase.io/benkinder) on keybase.
+  * I have a public key ASBR-CUs2Q0bTwHXMilImQemzHL_FzaGL61XY8zrY3gFeQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c5e10091450647d854e548d2d39239f6114eed0c5f35db7bcf8b1623ec4618720a",
+      "host": "keybase.io",
+      "kid": "012051f8252cd90d1b4f01d73229489907a6cc72ff1736862fad5763cceb637805790a",
+      "uid": "e78af4250ac2d9c55267cfb7a46aef19",
+      "username": "benkinder"
+    },
+    "merkle_root": {
+      "ctime": 1747276096,
+      "hash": "e33e0b0b0ec60eb4f3e6c5924b26a457a0b2ddb3e78f2422ee725b44de38c46fa932b7314c2882e9a1b6b1a17c17ff6265937d8d4d414440b8df6db27ba86239",
+      "hash_meta": "057aef462bec1427854abeda5d4979ded233642339b056f842642efae185d180",
+      "seqno": 26794476
+    },
+    "service": {
+      "entropy": "KCV4ENFek6CNRw8nTQEZlaF6",
+      "hostname": "frothly.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.1"
+  },
+  "ctime": 1747276115,
+  "expire_in": 504576000,
+  "prev": "2fb2848f5f5279118a72d72146992956668cb7687c20dc7da36c6b510c17215e",
+  "seqno": 48,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgUfglLNkNG08B1zIpSJkHpsxy/xc2hi+tV2PM62N4BXkKp3BheWxvYWTESpcCMMQgL7KEj19SeRGKctchRpkpVmaMt2h8INx9o2xrUQwXIV7EIKtKMSEsdQmt2+XMX6zz40/+iXp7tS4kSnnlWnbEfWZ+AgHCo3NpZ8RAIhaRe+TWpFIsZ+gvstMw60Segmrom+bI5ZlEU/RIs38SbpQcNvuAXTE2M1YD1jT3daXlgGoJ7EsxIzbOK9PqDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHzOweDDSIoRmfEEGroGy4vo1M4dShyF0e9Nien1WUs5o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/benkinder
+
+==================================================================
