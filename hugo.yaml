@@ -49,8 +49,8 @@ params:
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
+    icon: /icon.png
+    iconHeight: 45
 
   # home-info mode
   homeInfoParams:
