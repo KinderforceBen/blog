@@ -55,7 +55,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Welcome to my blog ☁️"
-    Content: "I'm Ben Kinder, a Salesforce Architect with 14 Salesforce certifications and a strong foundation in Salesforce administration, architecture concepts, and platform management. Brings nearly a decade of enterprise IT and cybersecurity experience, including leading secure system implementations and aligning infrastructure with organizational goals. Known for quickly learning new technologies and frameworks, with a constant drive to grow and deepen Salesforce expertise. Strong communicator with a proven ability to bridge technical strategy and business needs across diverse stakeholders."
+    Content: "I’m Ben Kinder, a Salesforce Architect with a background in IT, security, and platform development. I’ve worked across everything from Splunk and Citrix to Apex and Flow, and I’m always looking for ways to build smarter, cleaner systems that actually make people’s lives easier. This blog is where I share what I’ve been learning, building, and breaking — mostly around Salesforce, automation, cloud architecture, and security, with a few deep dives and how-tos along the way."
 
   socialIcons:
     - name: linkedin
