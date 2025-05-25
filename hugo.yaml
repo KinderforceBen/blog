@@ -50,7 +50,7 @@ params:
   label:
     text: "Home"
     icon: /icon.png
-    iconHeight: 45
+    iconHeight: 35
 
   # home-info mode
   homeInfoParams:
