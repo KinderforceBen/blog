@@ -64,6 +64,8 @@ params:
       url: "https://github.com/KinderforceBen"
     - name: mastodon
       url: "https://infosec.exchange/@benkinder"
+    - name: email
+      url: "mailto:ben@kinderforce.org"
     - name: Salesforce
       url: "https://www.salesforce.com/trailblazer/kinderforceben"
 
