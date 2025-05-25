@@ -59,13 +59,13 @@ params:
 
   socialIcons:
     - name: linkedin
-      url: "https://www.linkedin.com/in/benkinder42/"
+      url: "https://www.linkedin.com/in/kinderforceben"
     - name: github
-      url: "https://github.com/FrothlyBen"
+      url: "https://github.com/KinderforceBen"
     - name: mastodon
       url: "https://infosec.exchange/@benkinder"
-    - name: Trailhead
-      url: "https://www.salesforce.com/trailblazer/profile"
+    - name: Salesforce
+      url: "https://www.salesforce.com/trailblazer/kinderforceben"
 
   cover:
     hidden: true # hide everywhere but not in structured data
