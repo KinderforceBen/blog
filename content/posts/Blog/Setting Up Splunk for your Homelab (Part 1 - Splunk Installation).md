@@ -2,9 +2,10 @@
 tags:
   - splunk
   - infosec
+description: Learn how to install Splunk in your homelab environment with this step-by-step guide. Part 1 walks you through setting up a virtual machine and installing Ubuntu to prepare for Splunk deployment.
 title: Setting Up Splunk for your Homelab (Part 1 - Splunk Installation)
 date: 2025-05-07T20:22:42.000Z
-lastmod: 2025-05-25T16:36:50.980Z
+lastmod: 2025-05-27T19:41:29.931Z
 ---
 In this post I'll walk through the steps to download a free copy of Splunk, apply for a 10GB/day developer license, and set up your own Splunk server for your homelab. Splunk is a great tool to learn because it's widely used especially in large companies and because it's fun to dig in to. In the future, I'll post about getting data into Splunk from a variety of sources including Unifi network equipment, Corelight/Zeek, Salesforce, Microsoft, and more!
 
@@ -19,7 +20,7 @@ In this post I'll be using a number of tools that I already have set up in my ho
 I already use TrueNAS to host data for other projects, so we'll be creating a VM there, but you could create one locally using something like [VirtualBox](https://www.virtualbox.org/) for free. If you're using TrueNAS you can follow along with these steps, or if you're going the VirtualBox route you can skip to [Step 2: Installing Ubuntu](#step-2-installing-ubuntu).
 
 1. Login to TrueNAS and select **Virtualization** on the left-hand side, then select **Add** in the upper right\
-   ![Pasted image 20250507152656.png](/ob/attachments/Pasted%20image%2020250507152656.png)
+   ![TrueNAS VM Page](/ob/attachments/Pasted%20image%2020250507152656.png)
 2. Enter the following information under **Operating System** and then click **Next** (any options not mentioned here can be left with their default setting):
    1. Guest Operating System: Linux
    2. Name: Splunk
@@ -44,7 +45,7 @@ I already use TrueNAS to host data for other projects, so we'll be creating a VM
 8. Leave the settings in the **GPU** section at their defaults and click **Next**
 9. Review the **Confirm Options** section and click **Save**
 10. If everything went well you should now see your new VM in the Virtual Machines list\
-    ![Pasted image 20250507154246.png](/ob/attachments/Pasted%20image%2020250507154246.png)
+    ![TrueNAS VM Page](/ob/attachments/Pasted%20image%2020250507154246.png)
 
 ### ISO Too Large
 
@@ -53,13 +54,13 @@ If you received an error that the ISO was too large when you tried to upload it 
 If you're still here that means that the ISO file was too large for you to upload through the web interface so as a workaround we'll create an SMB share to store the ISO in instead!
 
 1. In TrueNAS, select **Datasets** on the left-hand side, click on the Zvol you'd like to store your ISOs in, and then click **Add Dataset** on the right-hand side of the page.\
-   ![Pasted image 20250507154623.png](/ob/attachments/Pasted%20image%2020250507154623.png)
+   ![TrueNAS Datasets Page](/ob/attachments/Pasted%20image%2020250507154623.png)
 2. On the **Add Dataset** page, enter a name for your dataset like "isos" and select **SMB** from the **Dataset Preset** dropdown. Then check off **Create SMB Share** and click **Save**\
-   ![Pasted image 20250507154741.png](/ob/attachments/Pasted%20image%2020250507154741.png)
+   ![TrueNAS Add Dataset](/ob/attachments/Pasted%20image%2020250507154741.png)
 3. Your SMB Share should be all set now! If you're on windows you can open File Explorer and enter `\\nas-address\isos` in the address bar to connect. If you're on a Mac open Finder and press CMD + K, then enter `smb://nas-address/isos` and click **Connect**\
-   ![Pasted image 20250507154959.png](/ob/attachments/Pasted%20image%2020250507154959.png)
+   ![Finder Connect to Server](/ob/attachments/Pasted%20image%2020250507154959.png)
 4. Once you're connected you should be able to drag and drop the ISO to your share and watch it upload!\
-   ![Pasted image 20250507155045.png](/ob/attachments/Pasted%20image%2020250507155045.png)
+   ![Finder Copy Progress](/ob/attachments/Pasted%20image%2020250507155045.png)
 5. Finally, now that our ISO is uploaded we need to attach it to our VM. In TrueNAS go to **Virtualization** on the left-hand side, then click the arrow to the right of the VM and select **Devices**\
    ![Pasted image 20250507155249.png](/ob/attachments/Pasted%20image%2020250507155249.png)
 6. Select **Add** in the upper right corner, then select the ISO you uploaded, enter a **Device Order** of 1010, and click **Save**\
