@@ -15,7 +15,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: "Salesforce, Security & Automation Insights | Ben Kinder"
-  description: "Blog by Ben Kinder, a Salesforce Architect, sharing insights on Apex, Flow, Splunk, automation, and cloud development for IT and CRM professionals."
+  description: "Salesforce Architect Ben Kinder shares expert insights on automation, cloud security, Splunk, and platform development—helping teams build scalable, secure systems."
   keywords: [Blog, Portfolio, PaperMod]
   author: Ben Kinder
   # author: ["Me", "You"] # multiple authors
@@ -118,3 +118,7 @@ markup:
 services:
   googleAnalytics:
     id: G-M5E25DS1XF
+
+imaging: 
+  quality: 80
+  resampleFilter: "lanczos"
