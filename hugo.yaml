@@ -1,5 +1,5 @@
 baseURL: "https://kinderforce.org/"
-title: Ben Kinder
+title: "Salesforce, Security & Automation Insights | Ben Kinder"
 pagination.pagerSize: 5
 theme: PaperMod
 
@@ -14,8 +14,8 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Ben Kinder
-  description: "Ben Kinder's Blog"
+  title: "Salesforce, Security & Automation Insights | Ben Kinder"
+  description: "Blog by Ben Kinder, a Salesforce Architect, sharing insights on Apex, Flow, Splunk, automation, and cloud development for IT and CRM professionals."
   keywords: [Blog, Portfolio, PaperMod]
   author: Ben Kinder
   # author: ["Me", "You"] # multiple authors
@@ -54,7 +54,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Welcome to my blog ☁️"
+    Title: "Insights from a Salesforce Architect: Automation, Cloud & Security ☁️"
     Content: "I’m Ben Kinder, a Salesforce Architect with a background in IT, security, and platform development. I’ve worked across everything from Splunk and Citrix to Apex and Flow, and I’m always looking for ways to build smarter, cleaner systems that actually make people’s lives easier. This blog is where I share what I’ve been learning, building, and breaking — mostly around Salesforce, automation, cloud architecture, and security, with a few deep dives and how-tos along the way."
 
   socialIcons:
