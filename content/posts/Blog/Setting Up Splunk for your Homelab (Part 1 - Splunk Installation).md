@@ -3,9 +3,11 @@ tags:
   - splunk
   - infosec
 description: Learn how to install Splunk in your homelab environment with this step-by-step guide. Part 1 walks you through setting up a virtual machine and installing Ubuntu to prepare for Splunk deployment.
+images:
+  - /ob/attachments/Pasted%20image%2020250507163216.png
 title: Setting Up Splunk for your Homelab (Part 1 - Splunk Installation)
 date: 2025-05-07T20:22:42.000Z
-lastmod: 2025-05-27T19:41:29.931Z
+lastmod: 2025-05-27T19:52:49.729Z
 ---
 In this post I'll walk through the steps to download a free copy of Splunk, apply for a 10GB/day developer license, and set up your own Splunk server for your homelab. Splunk is a great tool to learn because it's widely used especially in large companies and because it's fun to dig in to. In the future, I'll post about getting data into Splunk from a variety of sources including Unifi network equipment, Corelight/Zeek, Salesforce, Microsoft, and more!
 
@@ -129,3 +131,35 @@ Since we'll be using Ubuntu Server to host Splunk we'll need to install Ubuntu o
 1. First, we'll need to get a copy of the Splunk Enterprise installer. Luckily, Splunk offers a free download of the installer to anyone who creates an account [here](https://www.splunk.com/en_us/download/splunk-enterprise.html)
 2. Once you've made it to the download page, select **Linux** and then click **Copy wget link** on the **.deb** line (.deb is like the Ubuntu equivalent of .exe on Windows)\
    ![Pasted image 20250507162232.png](/ob/attachments/Pasted%20image%2020250507162232.png)![Pasted image 20250507162234.png](/ob/attachments/Pasted%20image%2020250507162234.png)
+3. Switch back to your SSH connection to your server and paste the wget link into the terminal. This will download the Splunk installer directly to your server\
+   ![Pasted image 20250507162429.png](/ob/attachments/Pasted%20image%2020250507162429.png)
+4. Now that we have the installer downloaded we just need to run it! You can use the command below to run the installer:
+   ```
+   sudo dpkg -i splunk-... (Press tab to auto-fill the full name)
+   ```
+   ![Pasted image 20250507162551.png](/ob/attachments/Pasted%20image%2020250507162551.png)
+5. Once the installer is complete we'll want to enable Splunk to run at startup and acknowledge the EULA. We can accomplish both of those items with this command:
+   ```
+   sudo /opt/splunk/bin/splunk enable boot-start
+   ```
+6. After you run the command you'll be presented with the EULA. Accept that agreement and then proceed to create an account\
+   ![Pasted image 20250507162854.png](/ob/attachments/Pasted%20image%2020250507162854.png)
+7. Now Splunk will automatically start whenever you boot your server and you can also manually start it with the command below that we'll run now
+   ```
+   sudo systemctl start splunk
+   ```
+8. Splunk may take a few minutes to start, but once it does you can access it at
+   ```
+   http://your-server-ip:8000
+   ```
+   ![Pasted image 20250507163110.png](/ob/attachments/Pasted%20image%2020250507163110.png)
+9. Login with the username and password you created and you should see the Splunk homepage\
+   ![Pasted image 20250507163216.png](/ob/attachments/Pasted%20image%2020250507163216.png)
+
+## Bonus Tip: Splunk Developer License
+
+By default, Splunk gives you a trial enterprise license for 60 days and then you can convert to a free license that has a limited feature set and only allows you to ingest 500MB/day of data. Luckily Splunk also offers a developer license that many people don't know about! You can apply for a developer license [here](https://dev.splunk.com/enterprise/dev_license/) and if you're approved you'll receive a license that supports most of the same features as the enterprise license and allows up to 10GB/day of data ingestion. These licenses can't be used for production use, but they're perfect for your homelab!
+
+## What's Next
+
+In this post we got Splunk set up, but there are still a lot of pieces missing. We're still using HTTP instead of HTTPS, we're on port 8000, and we're typing in an IP address to connect instead of a nice DNS name. We also haven't added any data to Splunk yet or performed any searches! That's why this is just part one of this series of posts. In future posts we'll cover enabling SSL, ingesting data through syslog, Splunk apps, and the Splunk HTTP Event Collector (HEC) from multiple sources including Unifi network devices, Microsoft, and Salesforce. Stay tuned for those posts over the next few weeks!

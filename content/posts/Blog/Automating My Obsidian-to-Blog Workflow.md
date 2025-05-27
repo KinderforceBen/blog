@@ -4,9 +4,11 @@ tags:
   - cicd
   - github_actions
 description: A walkthrough of how I automated publishing Obsidian notes to my blog using GitHub Actions and tighter plugin integration.
+images:
+  - /ob/attachments/Pasted%20image%2020250504180948.png
 title: Automating My Obsidian-to-Blog Workflow
 date: 2025-05-04T21:43:31.492Z
-lastmod: 2025-05-27T19:20:38.331Z
+lastmod: 2025-05-27T19:48:43.219Z
 ---
 ## Overview
 

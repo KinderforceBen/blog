@@ -4,9 +4,11 @@ tags:
   - agentforce
   - flows
 description: Discover practical tips for using Agentforce with Salesforce Flows. Learn how to assign roles, profiles, and permission sets efficiently, ensuring agents have the right access from day one.
+images:
+  - /ob/attachments/Pasted%20image%2020250505135407.png
 title: Tips for Using Agentforce with Flows
 date: 2025-05-05T15:31:11.410Z
-lastmod: 2025-05-27T19:41:15.548Z
+lastmod: 2025-05-27T19:53:35.515Z
 ---
 When Agentforce was released, the obvious use cases were internal AI chat for employees using Salesforce and customer-facing chat support integrated with Omni-Channel, but Salesforce announced support for calling Agentforce from flows as well. At first the flows use case made less sense to me (especially with the price for each Agentforce conversation at around \$2), but since then I've seen use cases where calling an agent from a flow has made sense and I have a few key takeaways and tips.
 

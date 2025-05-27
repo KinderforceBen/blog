@@ -8,9 +8,11 @@ tags:
   - marketing_cloud
   - superbadge
 description: Ben Kinder’s Salesforce cert sprint recap featuring the Apex Specialist Superbadge, Marketing Cloud Admin, and Agentforce Specialist certifications—highlighting AI automation, Apex best practices, and cross-cloud integration.
+images:
+  - /ob/attachments/Pasted%20image%2020250525123543.png
 title: Cert Sprint - Apex Specialist Superbadge, Marketing Cloud Admin, and Agentforce Specialist
 date: 2025-05-25T16:13:15.544Z
-lastmod: 2025-05-27T19:40:08.978Z
+lastmod: 2025-05-27T19:49:11.199Z
 ---
 ## Overview
 
