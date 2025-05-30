@@ -101,7 +101,7 @@ params:
 #       url: /tags/
 #       weight: 20
      - identifier: pottery
-       name: Pottery!
+       name: "Pottery!"
        url: https://kejceramics.com
        weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
