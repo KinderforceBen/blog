@@ -90,20 +90,12 @@ params:
     minMatchCharLength: 0
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
-  menu:
-    main:
-#     - identifier: categories
-#       name: categories
-#       url: /categories/
-#       weight: 10
-#     - identifier: tags
-#       name: tags
-#       url: /tags/
-#       weight: 20
-      - identifier: pottery
-       name: "Pottery!"
-       url: https://kejceramics.com
-       weight: 30
+menu:
+  main:
+  - identifier: pottery
+    name: "Pottery!"
+    url: https://kejceramics.com
+    weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
