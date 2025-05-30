@@ -90,8 +90,8 @@ params:
     minMatchCharLength: 0
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
-# menu:
-#   main:
+ menu:
+   main:
 #     - identifier: categories
 #       name: categories
 #       url: /categories/
