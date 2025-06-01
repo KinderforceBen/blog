@@ -1,5 +1,5 @@
 baseURL: "https://kinderforce.org/"
-title: "Kinderforce"
+title: "Salesforce, Security & Automation Insights | Ben Kinder"
 pagination.pagerSize: 5
 theme: PaperMod
 
@@ -14,7 +14,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "Salesforce, Security & Automation Insights | Ben Kinder"
+  title: "Kinderforce"
   description: "Salesforce Architect Ben Kinder shares expert insights on automation, cloud security, Splunk, and platform development—helping teams build scalable, secure systems."
   keywords: [Salesforce, Security, Automation, Splunk, Platform Development, Blog, Ben Kinder, Kinderforce, Cloud]
   author: Ben Kinder
